@@ -8,7 +8,7 @@ def make_parse() -> argparse.Namespace:
 
     parser.add_argument(
         "--base",
-        default="inputs/base.mp4",
+        default="inputs/base.MOV",
         type=str,
         help="movie of person speaking",
     )
@@ -61,7 +61,6 @@ def main():
         args.save,
         codec="libx264",
         audio_codec="aac",
-        temp_audiofile="temp-audio.mp3",
         remove_temp=True,
     )
 
